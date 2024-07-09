@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "serverless-plugin-typescript": "^2.1.5",
+    "serverless-offline": "^13.6.0",
     "typescript": "^5.5.3"
   }
 }
