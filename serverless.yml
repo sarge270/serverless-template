@@ -5,9 +5,6 @@ app: dencomm-serverless-example
 # "service" is the name of this project. This will also be added to your AWS resource names.
 service: dencomm-serverless-example
 
-plugins:
-  - serverless-offline
-
 
 provider:
   name: aws
@@ -16,3 +13,6 @@ provider:
 functions:
   hello:
     handler: handler.hello
+  testError:
+    handler: handler.testError
+

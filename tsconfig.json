@@ -5,10 +5,10 @@
     "strictNullChecks": true,
     "sourceMap": true,
     "allowJs": true,
-    "target": "es5",
+    "target": "ESNext",
     "outDir": ".build", //cannot be overwritten
     "moduleResolution": "node",
-    "lib": ["es2015"],
+    "lib": ["ESNext", "DOM"],
     "rootDir": "./" //cannot be overwritten
   }
 }

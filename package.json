@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "serverless-offline": "^13.6.0",
+    "@types/aws-lambda": "^8.10.141",
     "typescript": "^5.5.3"
   }
 }
