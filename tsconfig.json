@@ -9,6 +9,7 @@
     "outDir": ".build", //cannot be overwritten
     "moduleResolution": "node",
     "lib": ["ESNext", "DOM"],
-    "rootDir": "./" //cannot be overwritten
+    "rootDir": "./",//cannot be overwritten
+    "esModuleInterop": true
   }
 }
