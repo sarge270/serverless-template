@@ -1,5 +1,5 @@
 <!--
-title: 'Dencomm serverless Lambda example' 
+title: 'Dencomm serverless Lambda template' 
 description: '덴컴 서버리스 템플릿 예제'
 layout: Doc
 framework: v4
@@ -117,3 +117,9 @@ export const hello = (event, context) => LambdaHandler(sayHello)(event, context)
 
 
 ```
+
+### 환경변수 설정
+기본적으로는 serverless.yml을 통해 설정합니다만, env가 스테이지에 따라 변경될 경우에는 .env.{stage}파일을 만들면 serverless가 자동적으로
+인식합니다. 자세한 부분은 아래 문서를 참고 부탁드립니다.
+https://www.serverless.com/framework/docs/guides/upgrading-v4
+
