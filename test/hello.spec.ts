@@ -1,7 +1,10 @@
-import {hello} from "../handler/hello";
+import { sayHello} from "../handler/hello";
+import {Context} from "aws-lambda";
+import {ServerlessResponse} from "../types";
 
 describe('hello handler test', () => {
   it('should return a message', async () => {
-    expect(true).toEqual(true)
+    const result = await sayHello(null, {} as Context);
+    expect(result).toBe("Hello World!");
   });
 });

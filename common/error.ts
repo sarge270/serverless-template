@@ -11,7 +11,7 @@ export class ServerlessError extends Error {
 }
 
 
-export const handleError = (error: Error): ServerlessResponse => {
+export const handleError = (error: Error): {statusCode: number, body: string} => {
     if(error instanceof ServerlessError) {
         return {
             statusCode: error.errorCode,

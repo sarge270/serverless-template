@@ -1,8 +1,9 @@
-import {Handler} from "aws-lambda";
+import {Context, Handler} from "aws-lambda";
 import {ServerlessResponse} from "../types";
 import {handleError, ServerlessError} from "../common/error";
+import {LambdaHandler} from "../common/lambda";
 
-const throwError = (): Promise<void> => {
+export const throwError = (event: null, context: Context): Promise<string> => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             reject(new ServerlessError('This is an error', 400));
@@ -11,17 +12,4 @@ const throwError = (): Promise<void> => {
 
 }
 
-export const testError: Handler = async (event, context): Promise<ServerlessResponse> => {
-    try{
-        await throwError();
-        return {
-            statusCode: 200,
-            body: JSON.stringify({
-               message: 'Unreachable code',
-            }),
-        }
-    } catch(e){
-        return handleError(e)
-    }
-}
-
+export const testError: Handler =  (event, context)=> LambdaHandler(throwError)(event, context);

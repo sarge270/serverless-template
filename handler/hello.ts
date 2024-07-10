@@ -1,13 +1,9 @@
-import {Handler} from "aws-lambda";
-import {ServerlessResponse} from "../types";
+import {Context, Handler} from "aws-lambda";
 
-export const hello: Handler = async (event, context): Promise<ServerlessResponse> => {
-    return {
-        statusCode: 200,
-        body: JSON.stringify({
-            message: 'Hello World!',
-            input: event,
-        }),
-    };
+import {LambdaHandler} from "../common/lambda";
+
+export const sayHello =(request: null,context: Context): Promise<string> => {
+    return Promise.resolve("Hello World!");
 }
 
+export const hello = (event, context) => LambdaHandler(sayHello)(event, context);
