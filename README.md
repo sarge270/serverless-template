@@ -123,3 +123,11 @@ export const hello = (event, context) => LambdaHandler(sayHello)(event, context)
 인식합니다. 자세한 부분은 아래 문서를 참고 부탁드립니다.
 https://www.serverless.com/framework/docs/guides/upgrading-v4
 
+### Connection이 Pool 처리
+mongodb나 mysql등의 connection pool을 사용할 경우, handler가 여러번 호출될때 connection이 pool로 관리되어야 합니다.
+[serverless-postgres](https://www.npmjs.com/package/serverless-postgres), 
+[serverless-mysql](https://github.com/jeremydaly/serverless-mysql)
+아니면 해당 아티클을 참고하여 connection pool을 관리해주세요.
+https://mithulix.medium.com/use-mongodb-connection-pooling-on-aws-lambda-be91038dda92]
+
+등의 aws lambda를 위한 serverless connection 관리 package를 임포트 부탁드립니다.
