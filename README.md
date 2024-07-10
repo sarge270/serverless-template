@@ -10,9 +10,9 @@ authorLink: 'https://www.dencomm.ai'
 authorName: 'Dencomm, Inc.'
 -->
 
-# Dencomm Serverless Lambda Example
+# Dencomm Serverless Lambda Template
 
-덴컴 서버리스 프로젝트의 람다 함수 예제입니다.
+덴컴 서버리스 프로젝트의 aws lambda 배포 기본 template입니다.
 
 ## Usage
 
