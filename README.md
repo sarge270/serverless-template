@@ -1,18 +1,18 @@
 <!--
-title: 'Dencomm serverless Lambda template' 
-description: '덴컴 서버리스 템플릿 예제'
+title: 'serverless Lambda template' 
+description: '서버리스 템플릿 예제'
 layout: Doc
 framework: v4
 platform: AWS
 language: nodeJS, typescript
 priority: 1
-authorLink: 'https://www.dencomm.ai'
+authorLink: 'https://www.github.com.sarge270'
 authorName: 'Dencomm, Inc.'
 -->
 
-# Dencomm Serverless Lambda Template
+# Serverless Lambda Template
 
-덴컴 서버리스 프로젝트의 aws lambda 배포 기본 template입니다.
+서버리스 프로젝트의 aws lambda 배포 기본 template입니다.
 
 ## Usage
 
@@ -46,13 +46,13 @@ serverless deploy --stage dev
 ```
 
 ```
-Deploying "dencomm-serverless-example" to stage "dev" (ap-northeast-2)
+Deploying "serverless-example" to stage "dev" (ap-northeast-2)
 
-✔ Service deployed to stack dencomm-serverless-example-dev (60s)
+✔ Service deployed to stack serverless-example-dev (60s)
 
 functions:
-  hello: dencomm-serverless-example-dev-hello (5.8 kB)
-  testError: dencomm-serverless-example-dev-testError (5.8 kB)
+  hello: serverless-example-dev-hello (5.8 kB)
+  testError: serverless-example-dev-testError (5.8 kB)
 ```
 
 ### Invocation
